@@ -16,8 +16,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot_desktop-view.png)
+![](/screenshot_desktop-view.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://cccaitlinmae-3-column-preview.netlify.app/)
 
 ## My process
 
@@ -49,49 +47,48 @@ Users should be able to:
 
 I grew accustomed on using SASS in working my projects lately. But for this, I decided to use plain CSS to practice myself on other properties I still didn't know.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+1.) Use of CSS Variables: Since I'm used to SASS variables, I wanted to try to work with their variables on this challenge.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+  /*colors*/
+  --main-orange: hsl(31, 77%, 52%);
+}
+.card {
+  background: var(--main-orange);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+2.) Use of relative units: I still find it difficult to figure out the computation of ems, rems, vh & vw units. But delving into the basics on how it works on your browser, you would prefer this as well. Helps a lot for accessibility.
+
+```css
+html {
+  font-size: 62.5%;
+}
+.card-title {
+  font-size: 3.2rem;
+}
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+3.) Use of overflow:hidden : I had no idea how to work with this at first but this helped me to corner borders of a div container.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+.container {
+  overflow: hidden;
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I would most likely use relative units and mobile-first workflow for my future responsive web projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Use of Flexbox](https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/) - This helped me understand more a comprehensive appraoch to card layout with Flexbox
+- [Goodbye to Pixel Units!](https://uxdesign.cc/say-goodbye-to-pixels-cb720fbaf250) - As someone who grew making websites using px as units in almost everything, it has come to point where it has to end. Yet I'm still getting used to it as this point because I still use them in media queries. Although, I recommend reading this article to know why (px) is not anymore a good approach for responsive design.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@cccaitlinmae](https://www.frontendmentor.io/profile/cccaitlinmae)
+- Github - [@cccaitlinmae](https://github.com/cccaitlinmae/)
