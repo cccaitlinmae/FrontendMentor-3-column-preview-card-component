@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /*colors*/
+  --main-orange: hsl(31, 77%, 52%);
+  --main-dark-cyan: hsl(184, 100%, 22%);
+  --main-darker-cyan: hsl(179, 100%, 13%);
+  --neutral-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--neutral-light-gray);
+  margin: 0 auto;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-row {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh 0;
+}
+
+.card {
+  flex-direction: column;
+  max-width: 30rem;
+  padding: 4rem 3rem;
+}
+
+.card-icon {
+  margin-bottom: 1.8rem;
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: var(--neutral-light-gray);
+  margin-bottom: 1.8rem;
+}
+
+.card-description {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--neutral-white);
+  line-height: 180%;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  width: 95%;
+}
+
+.btn-primary {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 3rem;
+  background: var(--neutral-light-gray);
+  padding: 1.2rem 2rem;
+  transition: 500ms;
+  width: 12rem;
+  border: 2px solid transparent;
+}
+
+.card .btn-primary:hover {
+  background: transparent;
+  border: 2px solid var(--neutral-light-gray);
+  color: var(--neutral-white);
+  cursor: pointer;
+}
+
+.card:nth-child(1) {
+  background: var(--main-orange);
+}
+.card:nth-child(2) {
+  background: var(--main-dark-cyan);
+}
+.card:nth-child(3) {
+  background: var(--main-darker-cyan);
+}
+
+.card:nth-child(1) button {
+  color: var(--main-orange);
+}
+.card:nth-child(2) button {
+  color: var(--main-dark-cyan);
+}
+.card:nth-child(3) button {
+  color: var(--main-darker-cyan);
+}
+
+/*mobile first approach*/
+
+@media screen and (min-width: 900px) {
+  .card-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: unset;
+    align-items: unset;
+  }
+
+  .card {
+    height: unset;
+  }
+
+  .card-title,
+  .card-icon {
+    margin-bottom: 3rem;
+  }
+
+  .card-description {
+    width: 88%;
+    margin-bottom: 8rem;
+  }
+
+  .btn-primary {
+    width: 15rem;
+  }
+}
+
+/*credits*/
+.attribution {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
