@@ -75,7 +75,7 @@ body {
   background: var(--neutral-light-gray);
   padding: 1.2rem 2rem;
   transition: 500ms;
-  width: 12rem;
+  width: 13rem;
   border: 2px solid transparent;
 }
 
