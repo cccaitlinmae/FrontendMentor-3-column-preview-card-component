@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://cccaitlinmae-3-column-preview.netlify.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/3-column-preview-card-layout-using-html-css-44CX2dpWs)
+- Live Site URL: [Live site](https://cccaitlinmae-3-column-preview.netlify.app/)
 
 ## My process
 
