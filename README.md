@@ -80,11 +80,11 @@ html {
 
 ### Continued development
 
-I would most likely use relative units and mobile-first workflow for my future responsive web projects.
+I would definitely continue the use relative units and mobile-first workflow for my future responsive web projects.
 
 ### Useful resources
 
-- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) - This helped me know the standard syntax of CSS Variables and its usage
 - [Use of Flexbox](https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/) - This helped me understand more a comprehensive appraoch to card layout with Flexbox
 - [Goodbye to Pixel Units!](https://uxdesign.cc/say-goodbye-to-pixels-cb720fbaf250) - As someone who grew making websites using px as units in almost everything, it has come to point where it has to end. Yet I'm still getting used to it as this point because I still use them in media queries. Although, I recommend reading this article to know why (px) is not anymore a good approach for responsive design.
 
